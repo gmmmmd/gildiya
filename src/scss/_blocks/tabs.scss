@@ -1,0 +1,53 @@
+.tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  @media (min-width: $media-tablet) {
+    gap: 0;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: flex-start;
+
+    @media (min-width: $media-tablet) {
+      padding: 0 15px;
+    }
+  }
+
+  &__button {
+    background-color: #ddd;
+    border: 3px solid #ddd;
+    border-radius: 3px;
+    padding: 15px;
+    position: relative;
+    top: 2px;
+
+    &--active {
+      background-color: #fff;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    border: 3px solid #ddd;
+    min-height: 300px;
+  }
+
+  &__card {
+    padding: 5px;
+    width: 50%;
+
+    @media (min-width: $media-tablet) {
+      width: 20%;
+    }
+  }
+
+  &__img {
+    width: 100%;
+  }
+}
